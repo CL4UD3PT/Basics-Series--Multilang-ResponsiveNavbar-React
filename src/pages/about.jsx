@@ -12,6 +12,11 @@ export default function About() {
             <p>
                 {t('pages.about.first_paragraph')}
             </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, facilis necessitatibus sequi odio consectetur doloremque est asperiores, vero optio ad, dolor fugit debitis soluta explicabo laboriosam. In, necessitatibus! Esse, asperiores!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, facilis necessitatibus sequi odio consectetur doloremque est asperiores, vero optio ad, dolor fugit debitis soluta explicabo laboriosam. In, necessitatibus! Esse, asperiores!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, facilis necessitatibus sequi odio consectetur doloremque est asperiores, vero optio ad, dolor fugit debitis soluta explicabo laboriosam. In, necessitatibus! Esse, asperiores!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, facilis necessitatibus sequi odio consectetur doloremque est asperiores, vero optio ad, dolor fugit debitis soluta explicabo laboriosam. In, necessitatibus! Esse, asperiores!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, facilis necessitatibus sequi odio consectetur doloremque est asperiores, vero optio ad, dolor fugit debitis soluta explicabo laboriosam. In, necessitatibus! Esse, asperiores!</p>
         </PageContainer>
     )
 }

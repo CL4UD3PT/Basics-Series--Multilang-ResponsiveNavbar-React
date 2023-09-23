@@ -2,16 +2,16 @@ import styled from "styled-components";
 import { PageContainer } from "../components/pageContainer";
 import { useTranslation } from "react-i18next";
 
+const LeftPanel = styled.div``;
+const RightPanel = styled.div``;
+
+const LoginContainer = styled(PageContainer)`
+    flex-direction: row;
+    border: 1px solid black;
+`;
+
 export default function LandingPage() {
     const { t } = useTranslation();
-
-    const LeftPanel = styled.div``;
-    const RightPanel = styled.div``;
-
-    const LoginContainer = styled(PageContainer)`
-        flex-direction: row;
-        border: 1px solid black;
-    `;
 
     return (
         <LoginContainer>

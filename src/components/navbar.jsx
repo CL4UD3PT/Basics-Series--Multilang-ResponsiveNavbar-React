@@ -20,6 +20,12 @@ const NavbarTag = styled.nav`
     align-items: center;
     padding: 1rem 1.5rem;
     border-bottom: 1px solid #e2e8f0;
+    position: absolute;
+    /* width: 100%; */
+    backdrop-filter: blur(0.5rem);
+    position: sticky;
+    top: 0;
+    width: 100%;
 `;
 const LeftNavbarContainer = styled.div`
     display: flex;
@@ -32,7 +38,7 @@ const RightNavbarContainer = styled.div`
     flex-direction: row;
     align-items: end;
     gap: 1rem;
-`
+`;
 const HamburgerButton = styled.button`
     display: none;
     background: rgba(0, 0, 0, 0);

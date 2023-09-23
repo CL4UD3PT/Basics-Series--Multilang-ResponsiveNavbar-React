@@ -7,6 +7,11 @@ import NotFound from "./pages/not-found";
 import "./App.css";
 import { Navbar } from "./components/navbar";
 import LandingPage from "./pages/LandingPage";
+import styled from "styled-components";
+
+const Main = styled.main`
+    position: relative;
+`;
 
 function App() {
     const ROUTES = [
@@ -29,14 +34,14 @@ function App() {
     ];
 
     return (
-        <main>
-            <Navbar/>
+        <Main>
+            <Navbar />
             <Routes>
                 {ROUTES.map(({ path, element }) => (
                     <Route key={path} path={path} element={element} />
                 ))}
             </Routes>
-        </main>
+        </Main>
     );
 }
 
