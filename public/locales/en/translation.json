@@ -1,0 +1,32 @@
+{
+    "navbar_pages": {
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact"
+    },
+    "pages": {
+        "landing_page": {
+            "title": "Simple.desk",
+            "secondary_call": "Ticketing Customer Support",
+            "description": "Optimize your customers support in an easy way.",
+            "connection": "Login to your account in the side form. If you do not have credentials, contact the manufacturer.",
+            "form": {
+                "main_title": "Login",
+                "email_label": "Email",
+                "password_label": "Password"
+            }
+        },
+        "home": {
+            "title": "Home page",
+            "first_paragraph": "Home page first paragraph!"
+        },
+        "about": {
+            "title": "About page",
+            "first_paragraph": "About page first paragraph!"
+        },
+        "contact": {
+            "title": "Contact page",
+            "first_paragraph": "Contact page first paragraph!"
+        }
+    }
+}

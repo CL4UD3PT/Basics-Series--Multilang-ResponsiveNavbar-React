@@ -1,0 +1,32 @@
+{
+    "navbar_pages": {
+        "home": "Início",
+        "about": "Sobre",
+        "contact": "Contacto"
+    },
+    "pages": {
+        "landing_page": {
+            "title": "Simple.desk",
+            "secondary_call": "Suporte ao Cliente por Tickets.",
+            "description": "Otimize o suporte ao seu cliente de forma simples.",
+            "connection": "Faça o login no formulário ao lado. Caso não tenha credênciais entre em contacto com o fabricante.",
+            "form": {
+                "title": "Entrar",
+                "email_label": "Email",
+                "password_label": "Palavra-passe"
+            }
+        },
+        "home": {
+            "title": "Página Início",
+            "first_paragraph": "Primeiro parágrafo da página Início!"
+        },
+        "about": {
+            "title": "Página Sobre",
+            "first_paragraph": "Primeiro parágrafo da página Sobre!"
+        },
+        "contact": {
+            "title": "Página Contacto",
+            "first_paragraph": "Primeiro parágrafo da página Contacto!"
+        }
+    }
+}
