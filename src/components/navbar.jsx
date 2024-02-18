@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
+import { HamburgerButton } from "./hamburgerButton";
 
 const lngs = {
     en: {
@@ -39,39 +40,39 @@ const RightNavbarContainer = styled.div`
     align-items: end;
     gap: 1rem;
 `;
-const HamburgerButton = styled.button`
-    display: none;
-    background: rgba(0, 0, 0, 0);
-    border: none;
+// const HamburgerButton = styled.button`
+//     display: none;
+//     background: rgba(0, 0, 0, 0);
+//     border: none;
 
-    @media only screen and (max-width: 768px) {
-        display: block;
-        cursor: pointer;
-    }
-`;
-const BarTag = styled.span`
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #101010;
+//     @media only screen and (max-width: 768px) {
+//         display: block;
+//         cursor: pointer;
+//     }
+// `;
+// const BarTag = styled.span`
+//     display: block;
+//     width: 25px;
+//     height: 3px;
+//     margin: 5px auto;
+//     -webkit-transition: all 0.3s ease-in-out;
+//     transition: all 0.3s ease-in-out;
+//     background-color: #101010;
 
-    @media only screen and (max-width: 768px) {
-        .active &:nth-child(2) {
-            opacity: 0;
-        }
+//     @media only screen and (max-width: 768px) {
+//         .active &:nth-child(2) {
+//             opacity: 0;
+//         }
 
-        .active &:nth-child(1) {
-            transform: translateY(8px) rotate(45deg);
-        }
+//         .active &:nth-child(1) {
+//             transform: translateY(8px) rotate(45deg);
+//         }
 
-        .active &:nth-child(3) {
-            transform: translateY(-8px) rotate(-45deg);
-        }
-    }
-`;
+//         .active &:nth-child(3) {
+//             transform: translateY(-8px) rotate(-45deg);
+//         }
+//     }
+// `;
 
 const Logo = styled(Link)`
     font-size: 2.1rem;
@@ -140,6 +141,7 @@ export const Navbar = () => {
     const [hamburgerActive, setHamburgerActive] = useState(false);
 
     const handleHamburgerClick = () => {
+        console.log("Hello");
         setHamburgerActive(!hamburgerActive);
     };
 
@@ -148,12 +150,7 @@ export const Navbar = () => {
             <LeftNavbarContainer>
                 <HamburgerButton
                     className={hamburgerActive ? "active" : ""}
-                    onClick={handleHamburgerClick}
-                >
-                    <BarTag></BarTag>
-                    <BarTag></BarTag>
-                    <BarTag></BarTag>
-                </HamburgerButton>
+                    onClick={handleHamburgerClick} />
                 <Logo>Simple.desk</Logo>
             </LeftNavbarContainer>
             <RightNavbarContainer>
