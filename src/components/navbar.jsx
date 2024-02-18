@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import { HamburgerButton } from "./hamburgerButton";
+import { FlagButton } from "./flagButton";
 
 const lngs = {
     en: {
@@ -124,24 +125,23 @@ const NavMenu = styled.ul`
     }
 `;
 
-const FlagButton = styled.button`
-    background: transparent;
-    border: none;
+// const FlagButton = styled.button`
+//     background: transparent;
+//     border: none;
 
-    > span {
-        &.fi {
-            width: 3rem;
-            line-height: 2rem;
-        }
-    }
-`;
+//     > span {
+//         &.fi {
+//             width: 3rem;
+//             line-height: 2rem;
+//         }
+//     }
+// `;
 
 export const Navbar = () => {
     const { t, i18n } = useTranslation();
     const [hamburgerActive, setHamburgerActive] = useState(false);
 
     const handleHamburgerClick = () => {
-        console.log("Hello");
         setHamburgerActive(!hamburgerActive);
     };
 
@@ -175,18 +175,11 @@ export const Navbar = () => {
                     {Object.keys(lngs).map((lng) => (
                         <FlagButton
                             key={lng}
-                            style={{
-                                fontWeight:
-                                    i18n.language === lng ? "bold" : "normal",
-                            }}
+                            style={{ fontWeight: i18n.language === lng ? "bold" : "normal" }}
                             type="submit"
-                            onClick={() => {
-                                i18n.changeLanguage(lng);
-                            }}
-                        >
-                            <span className={`fi fi-${lngs[lng].flag}`}></span>
-                            {/* {lngs[lng].nativeName} */}
-                        </FlagButton>
+                            onClick={ () => i18n.changeLanguage(lng) }
+                            className={lngs[lng].flag}
+                        />
                     ))}
                 </div>
             </RightNavbarContainer>
